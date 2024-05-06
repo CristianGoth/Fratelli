@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzería</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Pizzería Fratelli</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Pizzería Fratelli</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="menu">
             <h2>Nuestras Pizzas</h2>
             <div class="row">
-                <div class="pizza">
+                <div class="pizza col-md-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="carnivora.jpg" alt="Carnívora">
+                                <img src="img/carnivora.jpg" alt="Carnívora">
                                 <h3>Carnívora</h3>
                                 <p>Precio: $12,000 CLP</p>
                             </div>
@@ -31,16 +46,18 @@
                                     <li>Jamón</li>
                                     <li>Carne de res</li>
                                     <li>Queso mozzarella</li>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Carnívora" data-price="12000">Agregar al carrito</button>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pizza">
+                <div class="pizza col-md-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="vegetariana.jpg" alt="Vegetariana">
+                                <img src="img/vegetariana.jpg" alt="Vegetariana">
                                 <h3>Vegetariana</h3>
                                 <p>Precio: $12,000 CLP</p>
                             </div>
@@ -53,16 +70,18 @@
                                     <li>Cebolla</li>
                                     <li>Tomate</li>
                                     <li>Queso mozzarella</li>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Vegetariana" data-price="12000">Agregar al carrito</button>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pizza">
+                <div class="pizza col-md-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="italiana.jpg" alt="Italiana">
+                                <img src="img/italiana.jpg" alt="Italiana">
                                 <h3>Italiana</h3>
                                 <p>Precio: $12,000 CLP</p>
                             </div>
@@ -75,18 +94,18 @@
                                     <li>Albahaca fresca</li>
                                     <li>Aceitunas negras</li>
                                     <li>Aceite de oliva</li>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Italiana" data-price="12000">Agregar al carrito</button>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="pizza">
+                <div class="pizza col-md-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="peperoni.jpg" alt="Peperoni">
+                                <img src="img/peperoni.jpg" alt="Peperoni">
                                 <h3>Peperoni</h3>
                                 <p>Precio: $12,000 CLP</p>
                             </div>
@@ -97,16 +116,17 @@
                                     <li>Pepperoni</li>
                                     <li>Queso mozzarella</li>
                                     <li>Salsa de tomate</li>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Peperoni" data-price="12000">Agregar al carrito</button>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pizza">
+                <div class="pizza col-md-6">
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="clasica.jpg" alt="Clásica">
+                                <img src="img/clasica.jpg" alt="Clásica">
                                 <h3>Clásica</h3>
                                 <p>Precio: $12,000 CLP</p>
                             </div>
@@ -118,6 +138,8 @@
                                     <li>Aceitunas</li>
                                     <li>Tomate</li>
                                     <li>Queso mozzarella</li>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Clásica" data-price="12000">Agregar al carrito</button>
+
                                 </ul>
                             </div>
                         </div>
@@ -126,8 +148,31 @@
             </div>
         </section>
     </main>
+    <div id="carrito" class="carrito">
+        <h3>Carrito de compras</h3>
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Pizza</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="lista-carrito">
+                <!-- Aquí se agregarán los elementos del carrito dinámicamente -->
+            </tbody>
+        </table>
+        <p>Total: <span id="total-carrito">$0</span></p>
+        <button id="btn-pagar" class="btn-pagar">Pagar</button>
+    </div>
     <footer>
         <p>&copy; 2024 Pizzería Fratelli</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+    
 </body>
 </html>
