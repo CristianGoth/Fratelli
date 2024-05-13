@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Pizzería Fratelli</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Nuestras Pizzas</h2>
+            <div class="row">
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/tropical.jpg" alt="Tropical">
+                    <h3>Tropical</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details1">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Tropical" data-price="10300">Añadir al carrito</button>
+
+                        <div id="details1" class="collapse">
+                            
+                            <p>Precio: $10.300 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Jamón</li>
+                                <li>Piña</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/napoli.jpg" alt="Bella Napoli">
+                    <h3>Bella Napoli</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details2">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Bella Napoli" data-price="10900">Añadir al carrito</button>
+
+                        <div id="details2" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Jamon</li>
+                                <li>Tomate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/siciliana.webp" alt="Siciliana">
+                    <h3>Siciliana</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details3">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Siciliana" data-price="10900">Añadir al carrito</button>
+                        <div id="details3" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Carne</li>
+                                <li>Cebolla Morada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/caprichosa.png" alt="Caprichosa">
+                    <h3>Caprichosa</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details4">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Caprichosa" data-price="10900">Añadir al carrito</button>
+                        <div id="details4" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Jamon</li>
+                                <li>Champiñon</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/romana.webp" alt="Romana">
+                    <h3>Romana</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details5">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Romana" data-price="10900">Añadir al carrito</button>
+                        <div id="details5" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Pepperoni</li>
+                                <li>Pimenton</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/toscana.webp" alt="Toscana">
+                    <h3>Toscana</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details6">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Toscana" data-price="10900">Añadir al carrito</button>
+                        <div id="details6" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Pollo</li>
+                                <li>Choclo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/vegetariana.jpg" alt="Quatro Stagioni">
+                    <h3>Quatro Stagioni</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details7">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Quatro Stagioni" data-price="10900">Añadir al carrito</button>
+                        <div id="details7" class="collapse">
+                            <p>Precio: $12.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Jamon</li>
+                                <li>Champiñon</li>
+                                <li>Aceitunas</li>
+                                <li>Palmito</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/cosa nostra.avif" alt="Cosa Nostra">
+                    <h3>Cosa Nostra</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details8">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Cosa Nostra" data-price="10900">Añadir al carrito</button>
+                        <div id="details8" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Carne</li>
+                                <li>Tocino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/arrabiata.jpg" alt="Arrabiata">
+                    <h3>Arrabiata</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details9">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Arrabiata" data-price="10900">Añadir al carrito</button>
+                        <div id="details9" class="collapse">
+                            <p>Precio: $10.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Salame</li>
+                                <li>Choclo</li>
+                                <li>Jalapeño</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/mamamia.jpg" alt="Mama Mia">
+                    <h3>Mama Mia</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details10">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Mama Mia" data-price="10900">Añadir al carrito</button>
+                        <div id="details10" class="collapse">
+                            <p>Precio: $11.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Chorizo</li>
+                                <li>Carne</li>
+                                <li>Pimenton</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                        </div>
+
+                <div class="pizza-wrapper col-md-4">
+                    <div class="pizza">
+                    <img src="img/lucia.webp" alt="Lucia">
+                    <h3>Lucia</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details11">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Lucia" data-price="10900">Añadir al carrito</button>
+                        <div id="details11" class="collapse">
+                            <p>Precio: $12.700 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de Tomate</li>
+                                <li>Queso</li>
+                                <li>Jamon</li>
+                                <li>Champiñon</li>
+                                <li>Camaron</li>
+                            </ul>
+                        </div>
+                    </div>                        </div>
+                </div>
+                <div class="pizza-wrapper col-md-4">                    <div class="pizza">
+                    <img src="img/fratelli.jpg" alt="Fratelli">
+                    <h3>Fratelli</h3>
+                    <div class="details">
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target="#details12">Detalles</button>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Fratelli" data-price="10900">Añadir al carrito</button>
+                        <div id="details12" class="collapse">
+                            <p>Precio: $13.900 CLP</p>
+                            <p>Ingredientes:</p>
+                            <ul>
+                                <li>Salsa de tomate</li>
+                                <li>Queso</li>
+                                <li>Carne</li>
+                                <li>Pollo</li>
+                                <li>Tocino</li>
+                                <li>Salame</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="carrito" class="carrito">
+        <h3>Carrito de compras</h3>
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Pizza</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="lista-carrito">
+                <!-- Aquí se agregarán los elementos del carrito dinámicamente -->
+            </tbody>
+        </table>
+        <p>Total: <span id="total-carrito">$0</span></p>
+        <button id="btn-pagar" class="btn-pagar">Pagar</button>
+    </div>
+    <div id="modal-form-envio" class="modal">
+        <button class="close">&times;</button> <!-- Botón de cerrar -->
+        <h3 class="form-title">Formulario de envío</h3>
+        <form id="form-envio">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" required><br>
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" class="form-input" required><br>
+            <label for="celular" class="form-label">N° celular:</label>
+            <input type="text" id="celular" name="celular" class="form-input" required><br>
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="text" id="email" name="email" class="form-input" required><br>
+            
+            <div id="tipo-entrega">
+                <label class="form-label">¿Cómo prefieres tu entrega?</label><br>
+                <input type="radio" id="local" name="tipo-entrega" value="local" class="form-radio" checked>
+                <label for="local" class="form-radio-label">Local</label><br>
+                <input type="radio" id="delivery" name="tipo-entrega" value="delivery" class="form-radio">
+                <label for="delivery" class="form-radio-label">Delivery</label><br>
+            </div>
+            
+            <div id="direccion-envio" style="display: none;">
+                <label for="tipo-direccion" class="form-label">¿En dónde vives?</label><br>
+                <input type="radio" id="casa" name="tipo-direccion" value="casa" class="form-radio" checked>
+                <label for="casa" class="form-radio-label">Casa</label><br>
+                <input type="radio" id="dept" name="tipo-direccion" value="dept" class="form-radio">
+                <label for="dept" class="form-radio-label">Departamento</label><br>
+                
+                <label for="calle" class="form-label">Calle:</label>
+                <input type="text" id="calle" name="calle" class="form-input"><br>
+                <label for="numero" class="form-label">N° Casa/Depto:</label>
+                <input type="text" id="numero" name="numero" class="form-input"><br>
+            </div>
+            <br>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>
+    
+    
+        
+    <br>
+    
+    <footer>
+        <p>&copy; 2024 Pizzería Fratelli</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/fromEnvio.js"></script>
+    
+</body>
+</html>

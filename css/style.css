@@ -1,0 +1,255 @@
+/* Estilos para las pizzas */
+.pizza-wrapper {
+    width: calc(33.333% - 40px); /* Ancho del 33.333% con 20px de espacio para el margen izquierdo y derecho */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.pizza {
+    background-color: white; /* Fondo blanco */
+    border-radius: 15px; /* Puntas redondas */
+    padding: 20px; /* Espacio interno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.pizza img {
+    width: 100%;
+    height: 200px; /* Altura fija */
+    object-fit: cover;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Otros estilos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    height: 100vh; /* Ajusta la altura del cuerpo al 100% de la altura de la ventana gráfica */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#menu {
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #f83838;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Fija el footer en su posición */
+    bottom: 0; /* Lo coloca en la parte inferior de la ventana gráfica */
+    width: 100%;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #d21f3c; /* Rojo italiano */
+    color: #fff; /* Texto en blanco */
+}
+
+.navbar-brand {
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Color del texto */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4f4f4; /* Cambio de color al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Color del icono del botón de alternancia de la barra de navegación */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Color del borde del botón de alternancia de la barra de navegación */
+}
+
+#contacto {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 5% 5% 10% 5%;
+}
+
+#contacto h1 {
+    color: #333333; /* Color del texto */
+}
+
+#contacto p {
+    color: #666666; /* Color del texto */
+}
+
+/* Estilos para el carrito de compras */
+.carrito {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin: 2% 0%; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+
+}
+
+.carrito h3 {
+    color: #333333; /* Color del texto */
+}
+
+#tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-carrito th,
+#tabla-carrito td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#tabla-carrito th {
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333333; /* Color del texto */
+}
+
+#tabla-carrito td img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#total-carrito {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-pagar {
+    background-color: #007bff; /* Azul */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pagar:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+@media (max-width: 768px) {
+    .carrito {
+        padding: 10px;
+    }
+    #tabla-carrito th,
+    #tabla-carrito td {
+        padding: 5px;
+    }
+    #tabla-carrito td img {
+        width: 40px;
+    }
+}
+
+/* Estilos para el contenedor del formulario de envío dentro del modal */
+#modal-form-envio {
+    background-color: #ffffff; /* Fondo blanco */
+    position: fixed; /* Posición fija para que se pueda centrar */
+    left: 50%; /* Centrar horizontalmente */
+    top: 50%; /* Centrar verticalmente */
+    transform: translate(-50%, -50%); /* Centrar completamente */
+    z-index: 1001; /* Asegurar que esté al frente del fondo oscuro */
+    padding: 20px; /* Añadir espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: calc(90% - 40px); /* Ancho igual al 90% del contenedor del carrito de compras */
+    max-width: 400px; /* Ancho máximo del formulario */
+    max-height: 80vh; /* Altura máxima del formulario */
+    overflow: auto; /* Habilitar desplazamiento si el contenido es demasiado grande */
+}
+
+/* Estilos para los elementos del formulario de envío */
+.form-label {
+    font-weight: bold;
+    display: inline-block; /* Mostrar elementos en línea */
+    width: 30%; /* Ancho fijo para las etiquetas */
+    margin-right: 10px; /* Espacio a la derecha de los elementos */
+    margin-bottom: 10px; /* Espacio debajo de los elementos */
+}
+
+.form-input {
+    width: calc(70% - 20px); /* Ajustar el ancho de los campos de entrada */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block; /* Mostrar en línea */
+}
+
+.form-radio {
+    display: inline-block; /* Mostrar en línea */
+    margin-right: 5px; /* Espacio a la derecha de los botones de radio */
+}
+
+.form-radio-label {
+    display: inline-block; /* Mostrar en línea */
+    margin-right: 15px; /* Espacio a la derecha de los botones de radio */
+}
+
+.btn-enviar {
+    background-color: #007bff; /* Azul */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 12px 24px; /* Aumentar el padding */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ancho completo */
+    margin-top: 15px; /* Espacio superior */
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Ajuste de estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    #modal-form-envio {
+        width: calc(100% - 40px); /* Ancho igual al 100% del contenedor del carrito de compras */
+    }
+}
